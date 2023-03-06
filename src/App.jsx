@@ -115,6 +115,8 @@ function Products({product,value,setValue}) {
         <Button onClick={()=>{
            if(add == false){
             setValue(value+1)
+           } else {
+            setValue(value-1)
            }
             addToCart(!add)
         }} className='button' sx={style} variant='outlined' size="small">
